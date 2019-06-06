@@ -16,10 +16,10 @@
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
+<div class="field">
+ <%= form.label :user_id %>
+ <%= form.select :user_id, @user_array, prompt: "Seleccione usuario" %>
+ </div>
 
   <div class="actions">
     <%= form.submit %>
